@@ -1,0 +1,105 @@
+{
+  "catalog_name": "Malawian Groceries - Cape Town",
+  "market": "Cape Town, South Africa",
+  "currency": "ZAR",
+  "origin_focus": "Malawi",
+  "note": "Suggested grocery catalog for a Malawian-focused store in Cape Town. Products are examples, not verified local stock listings. Prices, brands, availability and exact country of manufacture should be confirmed with suppliers.",
+  "products": [
+    {
+      "id": "MW001",
+      "name": "Maize Flour (Ufa wa Chimanga)",
+      "category": "Flour & Staples",
+      "unit": "2 kg",
+      "price": 55,
+      "description": "White maize flour for preparing nsima.",
+      "tags": [
+        "nsima",
+        "staple",
+        "maize"
+      ],
+      "image_url": "https://placehold.co/800x800/F8EBD5/1F3A2D.png?text=Maize%20Flour%20%28Ufa%20wa%20Chim",
+      "images": [
+        {
+          "url": "https://placehold.co/800x800/F8EBD5/1F3A2D.png?text=Maize%20Flour%20%28Ufa%20wa%20Chim",
+          "alt": "Maize Flour (Ufa wa Chimanga)",
+          "is_primary": true,
+          "is_placeholder": true
+        }
+      ]
+    },
+    {
+      "id": "MW002",
+      "name": "Whole Maize Grain",
+      "category": "Flour & Staples",
+      "unit": "5 kg",
+      "price": 85,
+      "description": "Dried maize grain for milling or traditional cooking.",
+      "tags": [
+        "maize",
+        "staple"
+      ],
+      "image_url": "https://placehold.co/800x800/F8EBD5/1F3A2D.png?text=Whole%20Maize%20Grain",
+      "images": [
+        {
+          "url": "https://placehold.co/800x800/F8EBD5/1F3A2D.png?text=Whole%20Maize%20Grain",
+          "alt": "Whole Maize Grain",
+          "is_primary": true,
+          "is_placeholder": true
+        }
+      ]
+    },
+    {
+      "id": "MW003",
+      "name": "Rice",
+      "category": "Rice & Grains",
+      "unit": "2 kg",
+      "price": 65,
+      "description": "Everyday rice; local or imported varieties may be stocked.",
+      "tags": [
+        "rice",
+        "staple"
+      ],
+      "image_url": "https://placehold.co/800x800/F8EBD5/1F3A2D.png?text=Rice",
+      "images": [
+        {
+          "url": "https://placehold.co/800x800/F8EBD5/1F3A2D.png?text=Rice",
+          "alt": "Rice",
+          "is_primary": true,
+          "is_placeholder": true
+        }
+      ]
+    },
+    {
+      "id": "MW004",
+      "name": "Kilombero Rice",
+      "category": "Rice & Grains",
+      "unit": "1 kg",
+      "price": 75,
+      "description": "Aromatic rice variety associated with Malawi; verify sourcing.",
+      "tags": [
+        "rice",
+        "Malawi"
+      ],
+      "image_url": "https://placehold.co/800x800/F8EBD5/1F3A2D.png?text=Kilombero%20Rice",
+      "images": [
+        {
+          "url": "https://placehold.co/800x800/F8EBD5/1F3A2D.png?text=Kilombero%20Rice",
+          "alt": "Kilombero Rice",
+          "is_primary": true,
+          "is_placeholder": true
+        }
+      ]
+    },
+    {
+      "id": "MW005",
+      "name": "Dried Beans (Nyemba)",
+      "category": "Beans & Pulses",
+      "unit": "1 kg",
+      "price": 60,
+      "description": "Dried beans for stews and everyday meals.",
+      "tags": [
+        "beans"
+      ]
+    }
+  ]
+}

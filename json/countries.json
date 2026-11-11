@@ -1,0 +1,28 @@
+{
+  "countries": [
+    {
+      "name": "Congo",
+      "flag_url": "assets/img/flags/congo.png"
+    },
+    {
+      "name": "Malawi",
+      "flag_url": "assets/img/flags/malawi.png"
+    },
+    {
+      "name": "Nigeria",
+      "flag_url": "assets/img/flags/nigeria.png"
+    },
+    {
+      "name": "Somalia",
+      "flag_url": "assets/img/flags/somalia.webp"
+    },
+    {
+      "name": "South Africa",
+      "flag_url": "assets/img/flags/south-africa.jpg"
+    },
+    {
+      "name": "Zimbabwe",
+      "flag_url": "assets/img/flags/zimbabwe.jpg"
+    }
+  ]
+}

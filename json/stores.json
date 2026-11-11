@@ -1,0 +1,118 @@
+{
+  "catalogue": "Bantu Basket - Malawian grocery stores in Cape Town",
+  "currency": "ZAR",
+  "data_type": "sample",
+  "disclaimer": "These are fictional example stores for development and testing, not verified operating businesses or addresses.",
+  "stores": [
+    {
+      "id": "MW-STORE-001",
+      "name": "Bantu",
+      "slug": "bantu",
+      "country_focus": "Malawi",
+      "country_code": "MW",
+      "city": "Cape Town",
+      "area": "Bellville",
+      "address": null,
+      "coordinates": null,
+      "delivery_areas": ["Bellville", "Parow", "Goodwood"],
+      "categories": ["Flour & Staples", "Rice", "Beans & Legumes", "Snacks"],
+      "featured_products": ["Maize Flour (Ufa wa Chimanga)", "Kilombero Rice", "Nandolo", "Roasted Groundnuts"],
+      "rating": {
+        "score": 4.8,
+        "review_count": 24
+      },
+      "promotion": {
+        "description": "10% off selected items"
+      },
+      "delivery_available": true,
+      "pickup_available": false,
+      "minimum_order_zar": 150,
+      "delivery_fee_zar": null,
+      "phone": null,
+      "email": null,
+      "logo_url": "assets/img/stores/1794340388_11462.avif",
+      "is_active": false
+    },
+    {
+      "id": "MW-STORE-002",
+      "name": "Marché Mboté",
+      "slug": "marche-mbote",
+      "country_focus": "Malawi",
+      "country_code": "MW",
+      "city": "Cape Town",
+      "area": "Maitland",
+      "address": null,
+      "coordinates": null,
+      "delivery_areas": ["Maitland", "Salt River", "Woodstock", "Observatory"],
+      "categories": ["Vegetables", "Dried Fish", "Flour & Staples", "Beans & Legumes"],
+      "featured_products": ["Cassava Leaves", "Pumpkin Leaves", "Dried Usipa", "Maize Flour (Ufa wa Chimanga)"],
+      "rating": {
+        "score": 4.6,
+        "review_count": 18
+      },
+      "promotion": null,
+      "delivery_available": true,
+      "pickup_available": false,
+      "minimum_order_zar": 120,
+      "delivery_fee_zar": null,
+      "phone": null,
+      "email": null,
+      "logo_url": "assets/img/stores/1794340391_53244.avif",
+      "is_active": false
+    },
+    {
+      "id": "MW-STORE-003",
+      "name": "Lake Malawi Foods",
+      "slug": "lake-malawi-foods",
+      "country_focus": "Malawi",
+      "country_code": "MW",
+      "city": "Cape Town",
+      "area": "Milnerton",
+      "address": null,
+      "coordinates": null,
+      "delivery_areas": ["Milnerton", "Table View", "Parklands", "Blouberg"],
+      "categories": ["Fish & Seafood", "Dried Fish", "Vegetables", "Roots & Tubers"],
+      "featured_products": ["Chambo", "Dried Usipa", "Cassava Leaves", "Sweet Potatoes"],
+      "rating": {
+        "score": 4.7,
+        "review_count": 21
+      },
+      "promotion": null,
+      "delivery_available": true,
+      "pickup_available": false,
+      "minimum_order_zar": 200,
+      "delivery_fee_zar": null,
+      "phone": null,
+      "email": null,
+      "logo_url": "assets/img/stores/lake-malawi.png",
+      "is_active": false
+    },
+    {
+      "id": "MW-STORE-004",
+      "name": "Mzuzu Grocery Basket",
+      "slug": "mzuzu-grocery-basket",
+      "country_focus": "Malawi",
+      "country_code": "MW",
+      "city": "Cape Town",
+      "area": "Kuils River",
+      "address": null,
+      "coordinates": null,
+      "delivery_areas": ["Kuils River", "Brackenfell", "Kraaifontein"],
+      "categories": ["Flour & Staples", "Tea & Beverages", "Beans & Legumes", "Roots & Tubers"],
+      "featured_products": ["Maize Flour (Ufa wa Chimanga)", "Malawian Tea", "Nandolo", "Sweet Potatoes"],
+      "rating": {
+        "score": 4.5,
+        "review_count": 16
+      },
+      "promotion": null,
+      "delivery_available": true,
+      "pickup_available": false,
+      "minimum_order_zar": 100,
+      "delivery_fee_zar": null,
+      "phone": null,
+      "email": null,
+      "logo_url": "assets/img/stores/grocery.png",
+      "is_active": false
+    }
+  ]
+}
