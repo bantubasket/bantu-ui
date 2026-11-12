@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Sell on Bantu Basket | Grow Your Store</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="assets/js/tailwind-theme.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    </head>
+
+<body class="bg-white antialiased font-sans text-cocoa">
+    <div class="bg-gradient-to-r from-brand to-[#985035] bg-brand text-white"><div class="mx-auto flex max-w-[1220px] items-center justify-between px-5 max-md:justify-center"><p class="text-xs max-md:hidden [&amp;_span]:px-[7px]">Authentic African products <span aria-hidden="true">|</span> Support local stores</p>
+        <nav class="flex gap-[14px] py-2 text-xs max-md:text-[11px] [&amp;_a+a]:border-l [&amp;_a+a]:border-white/60 [&amp;_a+a]:pl-[14px]">
+            <a href="sell.html" class="hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-secondary focus-visible:outline-offset-[3px]">Sell on Bantu Basket</a>
+            <a href="#" class="hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-secondary focus-visible:outline-offset-[3px]">Help</a>
+            <a href="#" class="hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-secondary focus-visible:outline-offset-[3px]">Contact us</a>
+        </nav>
+    </div></div>
+    <header class="sticky top-0 z-30 bg-white">
+        <div class="mx-auto flex max-w-[1220px] flex-nowrap items-center gap-4 px-5 py-[18px] max-[1100px]:flex-wrap max-[1100px]:gap-2.5">
+            <a href="index.html" class="mr-1.5 shrink-0 max-md:mr-auto"><img src="assets/img/logo/bantu.png" alt="Bantu Basket" class="h-[45px] w-[205px] object-contain object-left max-[1100px]:w-[175px]"></a>
+                <button id="country-selector" type="button" class="flex items-center gap-2 whitespace-nowrap rounded-xl border border-[#e1e3e8] px-3 py-2 text-left text-[11px] transition-colors hover:border-brand max-md:p-[7px] focus-visible:outline focus-visible:outline-2 focus-visible:outline-secondary focus-visible:outline-offset-[3px] max-sm:hidden" aria-haspopup="dialog" aria-controls="country-modal" aria-expanded="false">
+                    <img id="selected-country-flag" src="assets/img/flags/malawi.png" alt="Malawi flag" class="h-4 w-6 shrink-0 rounded-sm object-cover">
+
+                    <span>
+                        <span class="block text-slate-500">Stores from</span>
+                        <strong id="selected-country-name">Malawi</strong>
+                    </span>
+                </button>
+            <button id="delivery-selector" type="button" aria-haspopup="dialog" aria-controls="delivery-modal" aria-expanded="false" class="flex items-center gap-2 whitespace-nowrap rounded-xl border border-[#e1e3e8] px-3 py-2 text-left text-[11px] transition-colors hover:border-brand max-md:p-[7px] focus-visible:outline focus-visible:outline-2 focus-visible:outline-secondary focus-visible:outline-offset-[3px]"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewbox="0 0 512 512" class="shrink-0 text-secondary" height="20" width="20" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M256 48c-79.5 0-144 61.39-144 137 0 87 96 224.87 131.25 272.49a15.77 15.77 0 0 0 25.5 0C304 409.89 400 272.07 400 185c0-75.61-64.5-137-144-137"></path>
+                    <circle cx="256" cy="192" r="48" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"></circle>
+                </svg><span><span class="block text-slate-500">Deliver
+                        to</span><strong>Cape Town, South Africa</strong></span></button>
+            <form class="min-w-[130px] flex-1 max-[1100px]:order-1 max-[1100px]:basis-full" onsubmit="event.preventDefault()"><label class="sr-only" for="search">Search products</label><input id="search" class="w-full rounded-xl border border-slate-200 bg-[#fefefe] px-4 py-3 text-[11px] shadow-[inset_0_1px_3px_#131b3210] outline-none focus:border-brand" placeholder="Search groceries, snacks, and essentials..."></form>
+            <button class="relative text-sm flex items-center gap-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-secondary focus-visible:outline-offset-[3px] text-[13px]" aria-label="View cart, 1 item"><span class="relative rounded-full bg-cream p-3"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewbox="0 0 24 24" class="text-[#1f4c36]" height="24" width="24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21.822 7.431A1 1 0 0 0 21 7H7.333L6.179 4.23A1.994 1.994 0 0 0 4.333 3H2v2h2.333l4.744 11.385A1 1 0 0 0 10 17h8c.417 0 .79-.259.937-.648l3-8a1 1 0 0 0-.115-.921zM17.307 15h-6.64l-2.5-6h11.39l-2.25 6z">
+                        </path>
+                        <circle cx="10.5" cy="19.5" r="1.5"></circle>
+                        <circle cx="17.5" cy="19.5" r="1.5"></circle>
+                    </svg><span class="absolute -top-1.5 right-0 flex h-5 w-5 items-center justify-center rounded-full bg-brand p-1 text-center text-sm font-bold text-white">1</span></span><span class="hidden sm:block"><span class="block text-xs text-slate-500">Your Cart</span><strong>R159.99</strong></span></button><button id="login-selector" type="button" aria-haspopup="dialog" aria-controls="login-modal" aria-expanded="false" class="whitespace-nowrap rounded-xl bg-brand px-4 py-3 text-xs font-semibold text-white shadow-[0_3px_6px_#a85c3e20] hover:bg-brand-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-secondary focus-visible:outline-offset-[3px]">Login
+                / Register</button>
+        </div>
+    </header>
+    <main>
+    <section class="relative isolate overflow-hidden border-b border-[#eadbd0] bg-[linear-gradient(115deg,#fffaf4_0%,#fbf0e3_55%,#f0d8c2_100%)]" aria-labelledby="seller-title">
+        <div class="pointer-events-none absolute inset-y-0 left-0 w-20 bg-[url('assets/img/basket-pattern.svg')] bg-[length:76px_104px] bg-repeat-y opacity-35 [mask-image:linear-gradient(to_right,black,transparent)]" aria-hidden="true"></div>
+        <div class="relative mx-auto grid w-[calc(100%-40px)] max-w-[1220px] items-center gap-10 pb-14 pt-8 md:min-h-[620px] md:grid-cols-[1.1fr_1fr] md:gap-12 md:pb-20">
+            <div>
+                <h1 id="seller-title" class="max-w-[640px] text-[clamp(38px,4.8vw,64px)] font-bold leading-[1.06] tracking-[-.04em] text-cocoa">Sell on <span class="text-brand">Bantu Basket</span></h1>
+                <p class="mt-6 max-w-[520px] text-lg font-medium leading-relaxed text-[#554238]">Bring your African grocery business online and reach customers looking for a taste of home.</p>
+                <p class="mt-4 max-w-[540px] text-sm leading-[1.8] text-[#75675c]">Whether you run a neighbourhood grocery store, specialise in traditional African foods, or sell everyday essentials, Bantu Basket helps you showcase your products, connect with customers and grow your business online.</p>
+                <div class="mt-7 flex flex-wrap gap-3"><a href="#apply-to-sell" class="inline-flex items-center justify-center gap-3 rounded-full bg-brand px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-brand-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand">Apply to Sell <span aria-hidden="true">&rarr;</span></a><a href="#how-it-works" class="inline-flex items-center justify-center gap-3 rounded-full border border-[#d1bba9] bg-white/60 px-6 py-3.5 text-sm font-semibold text-[#813b24] transition hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand">How It Works</a></div>
+            </div>
+            <div class="relative mx-auto w-full max-w-[560px] pb-8 pt-5 md:pt-14">
+                <div class="absolute inset-x-4 inset-y-8 rounded-[48%_48%_30%_30%] bg-[#e6c4a5]/60" aria-hidden="true"></div>
+                <div class="absolute -right-7 top-0 h-44 w-44 rounded-full border-[28px] border-white/50" aria-hidden="true"></div>
+                <img src="assets/img/banner-2.webp" alt="A basket filled with African groceries, drinks and familiar pantry favourites" class="relative z-10 w-full object-contain drop-shadow-[0_20px_20px_#70452f18]" fetchpriority="high">
+                <p class="relative z-10 mx-auto -mt-2 max-w-[340px] rounded-2xl border border-[#e9d6c5] bg-white/95 px-6 py-4 text-center text-sm font-medium leading-relaxed text-[#813b24] shadow-[0_12px_35px_#70452f0d]">Your products deserve to be discovered.<br>Let&rsquo;s make it happen.</p>
+            </div>
+        </div>
+    </section>
+    <section class="mx-auto w-[calc(100%-40px)] max-w-[1220px] py-16 md:py-24" aria-labelledby="seller-benefits-title">
+        <div class="max-w-[760px]"><h2 id="seller-benefits-title" class="text-[clamp(28px,3.4vw,42px)] font-bold leading-[1.15] tracking-tight text-cocoa">Everything You Need to Grow Your Business Online</h2><p class="mt-4 text-lg text-[#8f482e]">You focus on great products. We&#x27;ll help you reach more customers.</p><p class="mt-4 max-w-[710px] text-[15px] leading-[1.8] text-[#68615b]">Selling online shouldn&#x27;t be complicated. Bantu Basket brings together African grocery sellers and shoppers in one convenient marketplace, making it easier for customers to discover, shop and support local businesses.</p></div>
+        <div class="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3"><article class="rounded-[22px] border border-[#eadfd5] bg-white p-6 transition hover:border-[#cfaa8f] hover:shadow-[0_10px_30px_#53331f08] sm:p-7">
+ <span class="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-[#fbf0e6] text-brand"><svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3 21v-3a6 6 0 0 1 12 0v3M17 4a3 3 0 0 1 0 6m1 5a5 5 0 0 1 3 5"/></svg></span>
+ <h3 class="text-xl font-semibold tracking-tight text-cocoa">Reach More Customers</h3>
+ <div class="mt-3 space-y-3 [&_strong]:font-medium"><p class="text-sm leading-[1.8] text-[#68615b]"><strong class="font-semibold text-cocoa">Get discovered by shoppers looking for products just like yours.</strong></p>
+<p class="text-sm leading-[1.8] text-[#68615b]">Connect with customers searching for familiar African flavours, traditional ingredients, snacks, beverages and everyday groceries. Expand your reach beyond your physical store and introduce your products to a wider community.</p></div>
+ </article><article class="rounded-[22px] border border-[#eadfd5] bg-white p-6 transition hover:border-[#cfaa8f] hover:shadow-[0_10px_30px_#53331f08] sm:p-7">
+ <span class="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-[#fbf0e6] text-brand"><svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10h18L19 3H5L3 10Zm2 0v11h14V10M9 21v-7h6v7"/><path d="M3 10a3 3 0 0 0 6 0 3 3 0 0 0 6 0 3 3 0 0 0 6 0"/></svg></span>
+ <h3 class="text-xl font-semibold tracking-tight text-cocoa">Your Store, Your Way</h3>
+ <div class="mt-3 space-y-3 [&_strong]:font-medium"><p class="text-sm leading-[1.8] text-[#68615b]"><strong class="font-semibold text-cocoa">Take control of your online business.</strong></p>
+<p class="text-sm leading-[1.8] text-[#68615b]">Create your own digital storefront, showcase your products and manage your catalogue, prices and availability from one convenient seller dashboard.</p>
+<p class="text-sm leading-[1.8] text-[#68615b]">Your brand stays yours. We simply help more people discover it.</p></div>
+ </article><article class="rounded-[22px] border border-[#eadfd5] bg-white p-6 transition hover:border-[#cfaa8f] hover:shadow-[0_10px_30px_#53331f08] sm:p-7">
+ <span class="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-[#fbf0e6] text-brand"><svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 5h12v13H2zM14 10h4l4 4v4h-8"/><circle cx="6" cy="19" r="2"/><circle cx="18" cy="19" r="2"/></svg></span>
+ <h3 class="text-xl font-semibold tracking-tight text-cocoa">Convenient Delivery Options</h3>
+ <div class="mt-3 space-y-3 [&_strong]:font-medium"><p class="text-sm leading-[1.8] text-[#68615b]"><strong class="font-semibold text-cocoa">Make shopping easier for your customers.</strong></p>
+<p class="text-sm leading-[1.8] text-[#68615b]">Connect with customers who prefer groceries delivered to their doorstep. Bantu Basket is designed to support convenient ordering and delivery, helping you serve customers beyond your immediate neighbourhood.</p>
+<p class="text-sm leading-[1.8] text-[#68615b]">Delivery availability and arrangements depend on your location and the services offered.</p></div>
+ </article><article class="rounded-[22px] border border-[#eadfd5] bg-white p-6 transition hover:border-[#cfaa8f] hover:shadow-[0_10px_30px_#53331f08] sm:p-7">
+ <span class="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-[#fbf0e6] text-brand"><svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="M2 9h20M6 15h4"/></svg></span>
+ <h3 class="text-xl font-semibold tracking-tight text-cocoa">Simple, Secure Payments</h3>
+ <div class="mt-3 space-y-3 [&_strong]:font-medium"><p class="text-sm leading-[1.8] text-[#68615b]"><strong class="font-semibold text-cocoa">Give customers a convenient way to pay online.</strong></p>
+<p class="text-sm leading-[1.8] text-[#68615b]">Offer a smoother shopping experience through supported online payment options, with order and payment information available to help you manage your business.</p></div>
+ </article><article class="rounded-[22px] border border-[#eadfd5] bg-white p-6 transition hover:border-[#cfaa8f] hover:shadow-[0_10px_30px_#53331f08] sm:p-7">
+ <span class="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-[#fbf0e6] text-brand"><svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 10 14-6v16L3 14v-4Zm14-1h3v6h-3M6 15l2 6h4l-2-5"/></svg></span>
+ <h3 class="text-xl font-semibold tracking-tight text-cocoa">Promote Your Products</h3>
+ <div class="mt-3 space-y-3 [&_strong]:font-medium"><p class="text-sm leading-[1.8] text-[#68615b]"><strong class="font-semibold text-cocoa">Put your best products in the spotlight.</strong></p>
+<p class="text-sm leading-[1.8] text-[#68615b]">Highlight new arrivals, popular products and special offers. Create compelling promotions that encourage customers to discover your store and keep coming back.</p></div>
+ </article><article class="rounded-[22px] border border-[#eadfd5] bg-white p-6 transition hover:border-[#cfaa8f] hover:shadow-[0_10px_30px_#53331f08] sm:p-7">
+ <span class="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-[#fbf0e6] text-brand"><svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 11a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm8 0a4 4 0 1 0 0-8M1 21v-3a7 7 0 0 1 14 0v3m3-7a6 6 0 0 1 5 6"/></svg></span>
+ <h3 class="text-xl font-semibold tracking-tight text-cocoa">Grow With Your Community</h3>
+ <div class="mt-3 space-y-3 [&_strong]:font-medium"><p class="text-sm leading-[1.8] text-[#68615b]"><strong class="font-semibold text-cocoa">Build something bigger than a grocery store.</strong></p>
+<p class="text-sm leading-[1.8] text-[#68615b]">Bantu Basket celebrates the diverse flavours and cultures that make African communities special. By joining our marketplace, you become part of a growing network of entrepreneurs bringing familiar products closer to home.</p></div>
+ </article></div>
+        <a href="#apply-to-sell" class="mt-8 inline-flex items-center gap-3 text-sm font-semibold text-brand underline underline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand">Become a Seller <span aria-hidden="true">&rarr;</span></a>
+    </section>
+    <section id="how-it-works" class="scroll-mt-28 border-y border-[#ecdfd4] bg-[#fbf5ee]" aria-labelledby="seller-steps-title">
+        <div class="mx-auto w-[calc(100%-40px)] max-w-[1220px] py-16 md:py-20">
+            <div class="max-w-[720px]"><h2 id="seller-steps-title" class="text-[clamp(28px,3.4vw,42px)] font-bold leading-[1.15] tracking-tight text-cocoa">From Your Shop to Their Doorstep</h2><p class="mt-4 text-lg text-[#8f482e]">Start selling in a few simple steps.</p><p class="mt-3 text-[15px] leading-[1.8] text-[#68615b]">Getting your business onto Bantu Basket is designed to be straightforward, whether you&rsquo;re an established retailer or just starting your journey.</p></div>
+            <ol class="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3"><li class="relative flex gap-4 rounded-2xl border border-[#e8dacf] bg-white/70 p-5 sm:p-6"><span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#f4e2d2] text-sm font-semibold text-[#8f482e]" aria-hidden="true">01</span><div><h3 class="text-lg font-semibold text-cocoa">Apply to Join</h3><p class="mt-2 text-sm leading-[1.8] text-[#68615b]">Tell us about your business, where you&#x27;re located and the products you&#x27;d like to sell.</p></div></li><li class="relative flex gap-4 rounded-2xl border border-[#e8dacf] bg-white/70 p-5 sm:p-6"><span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#f4e2d2] text-sm font-semibold text-[#8f482e]" aria-hidden="true">02</span><div><h3 class="text-lg font-semibold text-cocoa">Get Approved</h3><p class="mt-2 text-sm leading-[1.8] text-[#68615b]">Our team reviews your application to ensure your business and products are a good fit for the marketplace.</p></div></li><li class="relative flex gap-4 rounded-2xl border border-[#e8dacf] bg-white/70 p-5 sm:p-6"><span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#f4e2d2] text-sm font-semibold text-[#8f482e]" aria-hidden="true">03</span><div><h3 class="text-lg font-semibold text-cocoa">Set Up Your Store</h3><p class="mt-2 text-sm leading-[1.8] text-[#68615b]">Complete your seller profile, add your store logo and description, and provide the required business information.</p></div></li><li class="relative flex gap-4 rounded-2xl border border-[#e8dacf] bg-white/70 p-5 sm:p-6"><span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#f4e2d2] text-sm font-semibold text-[#8f482e]" aria-hidden="true">04</span><div><h3 class="text-lg font-semibold text-cocoa">Add Your Products</h3><p class="mt-2 text-sm leading-[1.8] text-[#68615b]">Upload product images, descriptions, prices and stock availability. Organise your products so customers can easily find what they&#x27;re looking for.</p></div></li><li class="relative flex gap-4 rounded-2xl border border-[#e8dacf] bg-white/70 p-5 sm:p-6"><span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#f4e2d2] text-sm font-semibold text-[#8f482e]" aria-hidden="true">05</span><div><h3 class="text-lg font-semibold text-cocoa">Start Selling</h3><p class="mt-2 text-sm leading-[1.8] text-[#68615b]">Once your store is ready and approved to go live, customers can discover your products and place orders.</p></div></li><li class="relative flex gap-4 rounded-2xl border border-[#e8dacf] bg-white/70 p-5 sm:p-6"><span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#f4e2d2] text-sm font-semibold text-[#8f482e]" aria-hidden="true">06</span><div><h3 class="text-lg font-semibold text-cocoa">Keep Growing</h3><p class="mt-2 text-sm leading-[1.8] text-[#68615b]">Manage orders, update your products, introduce promotions and discover new opportunities to grow your customer base.</p></div></li></ol>
+            <a href="#apply-to-sell" class="mt-8 inline-flex items-center justify-center gap-3 rounded-full bg-brand px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-brand-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand">Apply to Sell <span aria-hidden="true">&rarr;</span></a>
+        </div>
+    </section>
+    <section class="mx-auto w-[calc(100%-40px)] max-w-[1220px] py-16 md:py-20" aria-labelledby="seller-story-title">
+        <div class="relative overflow-hidden rounded-[28px] bg-brand px-7 py-10 text-white sm:px-12 sm:py-14">
+            <div class="pointer-events-none absolute inset-y-0 right-0 w-24 bg-[url('assets/img/basket-pattern.svg')] bg-repeat-y opacity-20" aria-hidden="true"></div>
+            <div class="relative grid gap-8 md:grid-cols-2 md:gap-14"><div><h2 id="seller-story-title" class="max-w-[430px] text-[clamp(30px,3.5vw,44px)] font-bold leading-[1.12] tracking-tight">Big Dreams Start With Small Shops</h2><p class="mt-5 max-w-[410px] text-lg leading-relaxed text-white/85">From neighbourhood favourites to growing African grocery brands.</p></div><div class="space-y-4 [&_strong]:!text-white"><p class="text-[15px] leading-[1.8] text-white/85">Every successful business starts somewhere.</p>
+<p class="text-[15px] leading-[1.8] text-white/85">Maybe you&#x27;re selling traditional Zimbabwean groceries, stocking Malawian favourites, offering Nigerian ingredients or helping families find the flavours they grew up with.</p>
+<p class="text-[15px] leading-[1.8] text-white/85">Whatever your story, Bantu Basket wants to help your business reach its next chapter.</p>
+<p class="text-[15px] leading-[1.8] text-white/85"><strong class="font-semibold text-cocoa">Your culture. Your products. Your business. Our marketplace.</strong></p></div></div>
+        </div>
+    </section>
+    <section class="mx-auto grid w-[calc(100%-40px)] max-w-[1220px] gap-8 pb-16 md:grid-cols-[.9fr_1.1fr] md:gap-20 md:pb-24" aria-labelledby="seller-eligibility-title">
+        <div><h2 id="seller-eligibility-title" class="text-[clamp(28px,3.4vw,42px)] font-bold leading-[1.15] tracking-tight text-cocoa">Who Can Sell on Bantu Basket?</h2><p class="mt-5 text-lg leading-relaxed text-[#8f482e]">If you&#x27;re passionate about great African products, we&#x27;d love to hear from you.</p><p class="mt-4 text-sm leading-[1.8] text-[#68615b]">We welcome applications from businesses offering a wide range of African products.</p></div>
+        <div><ul><li class="flex gap-3 border-t border-[#eadfd5] py-5"><span class="mt-0.5 text-lg text-brand" aria-hidden="true">&#10003;</span><div><h3 class="font-semibold text-cocoa">African groceries and traditional foods</h3><p class="mt-1.5 text-sm leading-[1.8] text-[#68615b]">Familiar ingredients and regional favourites from across the continent.</p></div></li><li class="flex gap-3 border-t border-[#eadfd5] py-5"><span class="mt-0.5 text-lg text-brand" aria-hidden="true">&#10003;</span><div><h3 class="font-semibold text-cocoa">Fresh produce and everyday essentials</h3><p class="mt-1.5 text-sm leading-[1.8] text-[#68615b]">Vegetables, staple foods and household groceries.</p></div></li><li class="flex gap-3 border-t border-[#eadfd5] py-5"><span class="mt-0.5 text-lg text-brand" aria-hidden="true">&#10003;</span><div><h3 class="font-semibold text-cocoa">Snacks, drinks and pantry favourites</h3><p class="mt-1.5 text-sm leading-[1.8] text-[#68615b]">Popular treats, beverages, spices and packaged goods.</p></div></li><li class="flex gap-3 border-t border-[#eadfd5] py-5"><span class="mt-0.5 text-lg text-brand" aria-hidden="true">&#10003;</span><div><h3 class="font-semibold text-cocoa">Speciality African products</h3><p class="mt-1.5 text-sm leading-[1.8] text-[#68615b]">Hard-to-find ingredients and unique products customers love.</p></div></li></ul><p class="mt-2 text-xs leading-relaxed text-[#82756a]">All products and sellers are subject to marketplace approval and applicable requirements.</p></div>
+    </section>
+    <section class="border-y border-[#ecdfd4] bg-[#fcfaf7]" aria-labelledby="seller-faq-title">
+        <div class="mx-auto grid w-[calc(100%-40px)] max-w-[1220px] gap-8 py-16 md:grid-cols-[.8fr_1.2fr] md:gap-20 md:py-20"><div><h2 id="seller-faq-title" class="text-[clamp(28px,3.4vw,42px)] font-bold leading-[1.15] tracking-tight text-cocoa">Frequently Asked Questions</h2><p class="mt-5 text-sm leading-relaxed text-[#68615b]">Have questions? Contact our team at <a href="mailto:support@bantubasket.co.za" class="text-brand underline underline-offset-4">support@bantubasket.co.za</a>.</p></div><div><details class="group border-b border-[#e7dcd2] py-5"><summary class="flex cursor-pointer list-none items-center justify-between gap-5 text-[15px] font-semibold text-cocoa [&::-webkit-details-marker]:hidden focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand">Do I need a physical store to sell?<span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#f5e9df] text-xl font-normal text-brand transition group-open:rotate-45" aria-hidden="true">+</span></summary><p class="mt-3 max-w-[640px] pr-8 text-sm leading-[1.8] text-[#68615b]">Not necessarily. You can apply whether you operate a physical shop or an online grocery business, provided you meet our seller requirements.</p></details><details class="group border-b border-[#e7dcd2] py-5"><summary class="flex cursor-pointer list-none items-center justify-between gap-5 text-[15px] font-semibold text-cocoa [&::-webkit-details-marker]:hidden focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand">Can I sell products from different African countries?<span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#f5e9df] text-xl font-normal text-brand transition group-open:rotate-45" aria-hidden="true">+</span></summary><p class="mt-3 max-w-[640px] pr-8 text-sm leading-[1.8] text-[#68615b]">Yes. Bantu Basket is built around the diversity of African products and cultures. You can apply to sell products associated with different African countries, subject to product approval and applicable regulations.</p></details><details class="group border-b border-[#e7dcd2] py-5"><summary class="flex cursor-pointer list-none items-center justify-between gap-5 text-[15px] font-semibold text-cocoa [&::-webkit-details-marker]:hidden focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand">Can I manage my own products and prices?<span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#f5e9df] text-xl font-normal text-brand transition group-open:rotate-45" aria-hidden="true">+</span></summary><p class="mt-3 max-w-[640px] pr-8 text-sm leading-[1.8] text-[#68615b]">Yes. Sellers can manage their product listings, pricing and availability through the seller platform.</p></details><details class="group border-b border-[#e7dcd2] py-5"><summary class="flex cursor-pointer list-none items-center justify-between gap-5 text-[15px] font-semibold text-cocoa [&::-webkit-details-marker]:hidden focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand">How much does it cost to sell?<span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#f5e9df] text-xl font-normal text-brand transition group-open:rotate-45" aria-hidden="true">+</span></summary><p class="mt-3 max-w-[640px] pr-8 text-sm leading-[1.8] text-[#68615b]">Seller fees and any applicable charges will be communicated during the application or onboarding process.</p></details><details class="group border-b border-[#e7dcd2] py-5"><summary class="flex cursor-pointer list-none items-center justify-between gap-5 text-[15px] font-semibold text-cocoa [&::-webkit-details-marker]:hidden focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand">How do deliveries work?<span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#f5e9df] text-xl font-normal text-brand transition group-open:rotate-45" aria-hidden="true">+</span></summary><p class="mt-3 max-w-[640px] pr-8 text-sm leading-[1.8] text-[#68615b]">Delivery arrangements depend on your store&#x27;s location, available delivery services and the fulfilment options supported by Bantu Basket.</p></details><details class="group border-b border-[#e7dcd2] py-5"><summary class="flex cursor-pointer list-none items-center justify-between gap-5 text-[15px] font-semibold text-cocoa [&::-webkit-details-marker]:hidden focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand">How do I get started?<span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#f5e9df] text-xl font-normal text-brand transition group-open:rotate-45" aria-hidden="true">+</span></summary><p class="mt-3 max-w-[640px] pr-8 text-sm leading-[1.8] text-[#68615b]">Simply submit your seller application with your business information. Our team will review it and guide you through the next steps.</p></details></div></div>
+    </section>
+    <section id="apply-to-sell" class="mx-auto grid w-[calc(100%-40px)] max-w-[1220px] scroll-mt-28 items-start gap-10 py-16 md:grid-cols-[.9fr_1.1fr] md:gap-20 md:py-24" aria-labelledby="seller-application-title">
+        <div class="md:sticky md:top-32"><h2 id="seller-application-title" class="text-[clamp(30px,3.6vw,44px)] font-bold leading-[1.15] tracking-tight text-cocoa">Ready to Grow<br><span class="text-brand">Your Business?</span></h2><p class="mt-5 text-lg leading-relaxed text-[#8f482e]">Your next customer could be looking for exactly what you sell.</p><p class="mt-4 text-[15px] leading-[1.8] text-[#68615b]">Bring your products online, reach more shoppers and become part of a marketplace that celebrates African flavours and the entrepreneurs behind them.</p><p class="mt-6 font-semibold text-[#813b24]">Join Bantu Basket and grow with us.</p></div>
+        <form action="mailto:support@bantubasket.co.za" method="post" enctype="text/plain" aria-describedby="seller-form-help" id="seller-application" class="rounded-[24px] border border-[#e4d5c8] bg-[#fffaf5] p-6 sm:p-8">
+            <h3 class="text-xl font-semibold text-cocoa">Tell us about your store</h3><p id="seller-form-help" class="mt-2 text-sm leading-relaxed text-[#786b60]">Complete your details to open an application email for our team.</p>
+            <div class="mt-6 grid gap-5 sm:grid-cols-2">
+                <div><label for="seller-name" class="text-sm font-medium">Your name <span aria-hidden="true">*</span></label><input id="seller-name" name="contactName" autocomplete="name" required maxlength="100" class="mt-2 w-full rounded-xl border border-[#ddcec1] bg-white px-3.5 py-3 text-sm text-cocoa outline-none transition placeholder:text-[#9a8c80] focus:border-brand focus:ring-2 focus:ring-brand/10"></div>
+                <div><label for="seller-store" class="text-sm font-medium">Store name <span aria-hidden="true">*</span></label><input id="seller-store" name="storeName" autocomplete="organization" required maxlength="120" class="mt-2 w-full rounded-xl border border-[#ddcec1] bg-white px-3.5 py-3 text-sm text-cocoa outline-none transition placeholder:text-[#9a8c80] focus:border-brand focus:ring-2 focus:ring-brand/10"></div>
+                <div><label for="seller-email" class="text-sm font-medium">Email address <span aria-hidden="true">*</span></label><input id="seller-email" name="email" type="email" autocomplete="email" required maxlength="150" class="mt-2 w-full rounded-xl border border-[#ddcec1] bg-white px-3.5 py-3 text-sm text-cocoa outline-none transition placeholder:text-[#9a8c80] focus:border-brand focus:ring-2 focus:ring-brand/10"></div>
+                <div><label for="seller-phone" class="text-sm font-medium">Phone number <span class="font-normal text-[#8c8076]">(optional)</span></label><input id="seller-phone" name="phone" type="tel" autocomplete="tel" maxlength="40" class="mt-2 w-full rounded-xl border border-[#ddcec1] bg-white px-3.5 py-3 text-sm text-cocoa outline-none transition placeholder:text-[#9a8c80] focus:border-brand focus:ring-2 focus:ring-brand/10"></div>
+                <div class="sm:col-span-2"><label for="seller-location" class="text-sm font-medium">Store location <span aria-hidden="true">*</span></label><input id="seller-location" name="location" autocomplete="address-level2" required maxlength="150" placeholder="City, area and country" class="mt-2 w-full rounded-xl border border-[#ddcec1] bg-white px-3.5 py-3 text-sm text-cocoa outline-none transition placeholder:text-[#9a8c80] focus:border-brand focus:ring-2 focus:ring-brand/10"></div>
+                <div class="sm:col-span-2"><label for="seller-products" class="text-sm font-medium">What would you like to sell? <span aria-hidden="true">*</span></label><textarea id="seller-products" name="products" rows="4" required maxlength="1200" placeholder="Tell us about your products and your business." class="mt-2 w-full rounded-xl border border-[#ddcec1] bg-white px-3.5 py-3 text-sm text-cocoa outline-none transition placeholder:text-[#9a8c80] focus:border-brand focus:ring-2 focus:ring-brand/10 resize-y"></textarea></div>
+            </div>
+            <button type="submit" class="mt-6 w-full inline-flex items-center justify-center gap-3 rounded-full bg-brand px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-brand-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand">Create application email <span aria-hidden="true">&rarr;</span></button>
+            <p id="seller-application-status" class="mt-3 text-sm leading-relaxed text-[#813b24]" role="status" hidden></p>
+            <p class="mt-4 text-xs leading-relaxed text-[#8c8076]">Your email app will open with your details filled in. Send the email to submit your application.</p>
+        </form>
+    </section>
+</main>
+    <footer class="bg-[#fbf2eb] text-cocoa">
+        <div class="mx-auto max-w-[1220px] px-5 pb-3 pt-4">
+            <div class="grid grid-cols-1 gap-7 py-9 text-sm sm:grid-cols-2 sm:gap-[30px] lg:grid-cols-[1.35fr_1fr_1fr_1fr_1.4fr] lg:gap-6"><div class="min-w-0 lg:border-r lg:border-[#d6b49c] lg:pr-5 [&amp;_img]:h-10 [&amp;_img]:w-[200px] [&amp;_img]:object-contain [&amp;_img]:object-left [&amp;_p]:mt-2.5 [&amp;_p]:text-[13px] [&amp;_p]:leading-normal"><a href="index.html" class="focus-visible:outline focus-visible:outline-2 focus-visible:outline-secondary focus-visible:outline-offset-[3px]"><img src="assets/img/logo/bantu.png" alt="Bantu Basket" loading="lazy"></a><p>African groceries and essentials,<br>closer to home.</p><div class="mt-[17px] flex gap-[9px]" aria-label="Social media"><a href="#" aria-label="Facebook" class="flex shrink-0 items-center justify-center rounded-lg bg-[#f9e5d6] p-[7px] text-brand transition-colors hover:bg-[#f2d5c1] focus-visible:outline focus-visible:outline-2 focus-visible:outline-secondary focus-visible:outline-offset-[3px]"><svg viewBox="0 0 24 24" class="h-[18px] w-[18px] text-brand" aria-hidden="true"><path fill="currentColor" d="M13.5 21v-8h2.7l.4-3h-3.1V8.1c0-.9.3-1.5 1.6-1.5h1.7V3.9c-.8-.1-1.7-.2-2.6-.2-2.6 0-4.4 1.6-4.4 4.5V10H7v3h2.8v8z"/></svg></a><a href="#" aria-label="TikTok" class="flex shrink-0 items-center justify-center rounded-lg bg-[#f9e5d6] p-[7px] text-brand transition-colors hover:bg-[#f2d5c1] focus-visible:outline focus-visible:outline-2 focus-visible:outline-secondary focus-visible:outline-offset-[3px]"><svg viewBox="0 0 24 24" class="h-[18px] w-[18px] text-brand" aria-hidden="true"><path fill="currentColor" d="M15 3h3.1c.2 2 1.5 3.5 3.6 3.8v3.1a8 8 0 0 1-3.6-1.3v6.2a5.8 5.8 0 1 1-5.8-5.8c.4 0 .8 0 1.2.1v3.3a2.6 2.6 0 1 0 1.5 2.4V3z"/></svg></a><a href="#" aria-label="Instagram" class="flex shrink-0 items-center justify-center rounded-lg bg-[#f9e5d6] p-[7px] text-brand transition-colors hover:bg-[#f2d5c1] focus-visible:outline focus-visible:outline-2 focus-visible:outline-secondary focus-visible:outline-offset-[3px]"><svg viewBox="0 0 24 24" class="h-[18px] w-[18px] text-brand" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="18" cy="6" r="1.2" fill="currentColor"/></svg></a><a href="#" aria-label="WhatsApp" class="flex shrink-0 items-center justify-center rounded-lg bg-[#f9e5d6] p-[7px] text-brand transition-colors hover:bg-[#f2d5c1] focus-visible:outline focus-visible:outline-2 focus-visible:outline-secondary focus-visible:outline-offset-[3px]"><svg viewBox="0 0 24 24" class="h-[18px] w-[18px] text-brand" aria-hidden="true"><path d="M20 11.6a8 8 0 0 1-11.9 6.9L4 20l1.5-4A8 8 0 1 1 20 11.6Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 8.5c.3-.5.6-.5.9-.5h.4c.2 0 .4.1.5.4l.7 1.7c.1.3.1.5-.1.7l-.5.6c-.2.2-.2.4 0 .6.4.7 1 1.3 1.7 1.7.2.1.4.1.6-.1l.7-.8c.2-.2.4-.2.7-.1l1.5.7c.3.1.4.3.4.5 0 .3-.2 1.1-.7 1.5-.5.5-1.2.7-2 .5-1-.2-2.3-.8-3.5-2-1.1-1.1-1.8-2.4-2-3.3-.2-.9.1-1.6.7-2.1Z" fill="currentColor"/></svg></a></div></div>
+                <div class="min-w-0">
+                    <h3 class="mb-3 text-[13px] font-bold text-[#813b24]">Bantu Basket</h3>
+                    <div class="space-y-1.5 text-xs text-cocoa">
+                        <p><a href="about.html" class="focus-visible:outline focus-visible:outline-2 focus-visible:outline-secondary focus-visible:outline-offset-[3px]">About us</a></p>
+                        <p><a href="sell.html" class="focus-visible:outline focus-visible:outline-2 focus-visible:outline-secondary focus-visible:outline-offset-[3px]">Sell on Bantu Basket</a></p>
+                        <p><a href="mailto:support@bantubasket.co.za?subject=Deliver%20for%20Bantu%20Basket" class="focus-visible:outline focus-visible:outline-2 focus-visible:outline-secondary focus-visible:outline-offset-[3px]">Deliver for Bantu Basket</a></p>
+                    </div>
+                </div>
+                <div class="min-w-0">
+                    <h3 class="mb-3 text-[13px] font-bold text-[#813b24]">Customer support</h3>
+                    <div class="space-y-1.5 text-xs text-cocoa">
+                        <p><a href="#" class="focus-visible:outline focus-visible:outline-2 focus-visible:outline-secondary focus-visible:outline-offset-[3px]">FAQs</a></p>
+                        <p><a href="mailto:support@bantubasket.co.za" class="focus-visible:outline focus-visible:outline-2 focus-visible:outline-secondary focus-visible:outline-offset-[3px]">Contact Us</a></p>
+                        <p><a href="mailto:support@bantubasket.co.za?subject=Help" class="focus-visible:outline focus-visible:outline-2 focus-visible:outline-secondary focus-visible:outline-offset-[3px]">Help</a></p>
+                    </div>
+                </div>
+<div class="min-w-0">
+                    <h3 class="mb-3 text-[13px] font-bold text-[#813b24]">Company policies</h3>
+                    <div class="space-y-1.5 text-xs text-cocoa">
+                        <p><a href="#" class="focus-visible:outline focus-visible:outline-2 focus-visible:outline-secondary focus-visible:outline-offset-[3px]">Terms &amp; conditions</a></p>
+                        <p><a href="#" class="focus-visible:outline focus-visible:outline-2 focus-visible:outline-secondary focus-visible:outline-offset-[3px]">Privacy policy</a></p>
+                        <p><a href="#" class="focus-visible:outline focus-visible:outline-2 focus-visible:outline-secondary focus-visible:outline-offset-[3px]">Returns &amp; exchanges</a></p>
+                        <p><a href="#" class="focus-visible:outline focus-visible:outline-2 focus-visible:outline-secondary focus-visible:outline-offset-[3px]">Shipping policy</a></p>
+                        <p><a href="#" class="focus-visible:outline focus-visible:outline-2 focus-visible:outline-secondary focus-visible:outline-offset-[3px]">Cancellation policy</a></p>
+                    </div>
+                </div>
+                <div class="min-w-0 lg:border-l lg:border-[#d6b49c] lg:pl-[25px]">
+                    <h3 class="mb-3 text-[13px] font-bold text-[#813b24]">Store information</h3>
+                    <div class="space-y-4 text-xs text-cocoa">
+                        <p class="flex items-center gap-[9px]"><span class="shrink-0 rounded-lg bg-[#f9e5d6] p-[7px]"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewbox="0 0 256 256" class="h-[18px] w-[18px] text-brand" height="24" width="24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M128,60a44,44,0,1,0,44,44A44.05,44.05,0,0,0,128,60Zm0,64a20,20,0,1,1,20-20A20,20,0,0,1,128,124Zm0-112a92.1,92.1,0,0,0-92,92c0,77.36,81.64,135.4,85.12,137.83a12,12,0,0,0,13.76,0,259,259,0,0,0,42.18-39C205.15,170.57,220,136.37,220,104A92.1,92.1,0,0,0,128,12Zm31.3,174.71A249.35,249.35,0,0,1,128,216.89a249.35,249.35,0,0,1-31.3-30.18C80,167.37,60,137.31,60,104a68,68,0,0,1,136,0C196,137.31,176,167.37,159.3,186.71Z"></path></svg></span><span class="[overflow-wrap:anywhere]">164 Voortrekker Road, Maitland</span></p>
+                        <p class="flex items-center gap-[9px]"><span class="shrink-0 rounded-lg bg-[#f9e5d6] p-[7px]"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewbox="0 0 24 24" class="h-[18px] w-[18px] text-brand" height="24" width="24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M20 4H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm0 2v.511l-8 6.223-8-6.222V6h16zM4 18V9.044l7.386 5.745a.994.994 0 0 0 1.228 0L20 9.044 20.002 18H4z"></path></svg></span><span class="[overflow-wrap:anywhere]">support@bantubasket.co.za</span></p>
+                        <p class="flex items-center gap-[9px]"><span class="shrink-0 rounded-lg bg-[#f9e5d6] p-[7px]"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewbox="0 0 24 24" class="h-[18px] w-[18px] text-brand" height="24" width="24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M16.57 22a2 2 0 0 0 1.43-.59l2.71-2.71a1 1 0 0 0 0-1.41l-4-4a1 1 0 0 0-1.41 0l-1.6 1.59a7.55 7.55 0 0 1-3-1.59 7.62 7.62 0 0 1-1.59-3l1.59-1.6a1 1 0 0 0 0-1.41l-4-4a1 1 0 0 0-1.41 0L2.59 6A2 2 0 0 0 2 7.43 15.28 15.28 0 0 0 6.3 17.7 15.28 15.28 0 0 0 16.57 22zM6 5.41 8.59 8 7.3 9.29a1 1 0 0 0-.3.91 10.12 10.12 0 0 0 2.3 4.5 10.08 10.08 0 0 0 4.5 2.3 1 1 0 0 0 .91-.27L16 15.41 18.59 18l-2 2a13.28 13.28 0 0 1-8.87-3.71A13.28 13.28 0 0 1 4 7.41zM20 11h2a8.81 8.81 0 0 0-9-9v2a6.77 6.77 0 0 1 7 7z"></path><path d="M13 8c2.1 0 3 .9 3 3h2c0-3.22-1.78-5-5-5z"></path></svg></span><span class="[overflow-wrap:anywhere]">0632724197</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-[#dcc5b3] bg-[#f0dfd3]">
+            <div class="mx-auto flex max-w-[1220px] flex-wrap justify-between gap-3 px-5 py-4 text-xs text-cocoa"><span>©
+                    2026 Bantu Basket. All rights reserved.</span><span>Secure payments · Made for your community</span>
+            </div>
+        </div>
+    </footer>
+
+        <div id="country-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/55 p-4 backdrop-blur-sm" role="dialog" aria-modal="true" aria-labelledby="country-modal-title">
+            <div class="relative max-h-[calc(100dvh-32px)] w-full max-w-2xl overflow-y-auto rounded-[24px] border border-white/70 bg-[#fffdfa] p-5 shadow-[0_24px_70px_#00000035] sm:p-7">
+
+                <button id="close-country-modal" type="button" aria-label="Close country selector" class="absolute right-4 top-4 flex h-9 w-9 items-center justify-center rounded-full bg-[#f6f1eb] text-2xl text-[#4c4a44] transition hover:bg-[#f2e5d9] focus-visible:outline focus-visible:outline-2 focus-visible:outline-secondary focus-visible:outline-offset-[3px]">
+                    ×
+                </button>
+
+                <div class="mb-7 pr-10">
+                    <p class="mb-2 inline-flex items-center gap-2 rounded-full bg-[#fff0df] px-3 py-1 text-[10px] font-bold uppercase tracking-[.12em] text-[#924723]">
+                        Explore African flavours
+                    </p>
+
+                    <h2 id="country-modal-title" class="text-[24px] font-bold tracking-tight text-[#23332a] sm:text-[28px]">
+                        Where are you craving a taste of home from?
+                    </h2>
+
+                    <p class="mt-2 max-w-xl text-[13px] leading-relaxed text-[#6b655e]">
+                        From childhood favourites to the flavours you've been missing,
+                        discover authentic groceries from your favourite African countries,
+                        delivered to your doorstep.
+                    </p>
+                </div>
+
+                <div id="country-modal-grid" class="grid grid-cols-2 gap-3 sm:grid-cols-3"></div>
+
+                <p class="mt-5 text-center text-[11px] text-[#7b746c]">
+                    Pick a country to explore its stores. You can switch anytime.
+                </p>
+
+            </div>
+        </div>
+
+    <dialog id="delivery-modal" aria-labelledby="delivery-modal-title" aria-describedby="delivery-note" class="relative w-[min(640px,calc(100%-32px))] max-h-[calc(100dvh-32px)] overflow-hidden rounded-[11px] border-0 px-[30px] pl-[50px] py-[38px] text-cocoa shadow-[0_12px_24px_#00000026] backdrop:bg-[rgb(25_30_24/48%)] max-[480px]:px-5 max-[480px]:pl-[40px] max-[480px]:py-7">
+        <div class="pointer-events-none absolute inset-y-0 left-0 z-0 w-[22px] bg-[url('assets/img/stores/pattern.png')] bg-[length:76px_auto] bg-repeat-y" aria-hidden="true"></div>
+        <div class="flex items-start justify-between gap-4">
+            <h2 id="delivery-modal-title" class="pt-1 text-2xl font-semibold">Set Delivery Location</h2>
+            <button id="close-delivery-modal" type="button" aria-label="Close delivery location" class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-sand hover:bg-slate-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-secondary focus-visible:outline-offset-[3px]">
+                <svg width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"></path></svg>
+            </button>
+        </div>
+        <img class="mx-auto mb-16 mt-[68px] block h-[100px] w-[330px] max-w-[80%] object-contain max-[480px]:my-[42px]" src="assets/img/logo/bantu.png" alt="Bantu Basket">
+        <label for="delivery-address" class="mb-12 block text-center text-[22px] font-semibold">Select Your Delivery Location</label>
+        <input id="delivery-address" type="text" autocomplete="street-address" placeholder="Enter your delivery address" class="w-full rounded-[10px] border border-[#d1bba9] px-2.5 py-2.5 text-lg outline-none focus:border-brand focus:ring-2 focus:ring-brand/20" aria-describedby="delivery-note">
+        <p id="delivery-note" class="mt-2.5 text-center text-[15px] text-[#70503d]">We currently deliver only in Cape Town</p>
+    </dialog>
+
+    <dialog id="login-modal" aria-labelledby="login-modal-title" aria-describedby="login-description" class="w-[min(640px,calc(100%-32px))] max-h-[calc(100dvh-32px)] rounded-[10px] border border-[#d5dfdc] px-[30px] pb-[60px] pt-[38px] text-cocoa shadow-[0_12px_28px_#00000020] backdrop:bg-black/40 max-[480px]:px-5 max-[480px]:pb-8 max-[480px]:pt-6">
+        <div class="flex items-center justify-between gap-4">
+            <h2 id="login-modal-title" class="text-4xl font-bold">Login</h2>
+            <button id="close-login-modal" type="button" aria-label="Close login" class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-sand hover:bg-slate-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-secondary focus-visible:outline-offset-[3px]">
+                <svg width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"></path></svg>
+            </button>
+        </div>
+        <h3 class="max-[480px]:mt-8 max-[480px]:text-[38px] mt-14 text-5xl font-bold leading-tight">Welcome</h3>
+        <p id="login-description" class="mt-2 text-[15px] text-[#70503d]">Enter your email address or phone number associated with your account to continue.</p>
+        <form id="login-form" class="mt-7">
+            <label for="login-identity" class="sr-only">Email address or phone number</label>
+            <input id="login-identity" name="username" type="text" autocomplete="username" placeholder="Type Email" class="h-[53px] w-full rounded-[5px] border border-[#d1bba9] px-5 text-xl text-[#70503d] placeholder:text-[#79583f] placeholder:opacity-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand focus-visible:outline-offset-2" required>
+            <div class="relative mt-5">
+                <label for="login-password" class="sr-only">Password</label>
+                <input id="login-password" name="password" type="password" autocomplete="current-password" placeholder="Enter Password" class="h-[53px] w-full rounded-[5px] border border-[#d1bba9] px-5 text-xl text-[#70503d] placeholder:text-[#79583f] placeholder:opacity-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand focus-visible:outline-offset-2 !pr-14" required>
+                <button id="toggle-login-password" type="button" aria-label="Show password" aria-pressed="false" class="absolute right-0 top-0 flex h-full w-12 items-center justify-center text-[#70503d] focus-visible:outline focus-visible:outline-2 focus-visible:outline-secondary focus-visible:outline-offset-[3px]">
+                    <svg width="22" height="22" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                </button>
+            </div>
+            <div class="mt-2.5 text-right"><button type="button" data-login-action="reset" class="font-medium text-[#b55e3d] hover:underline text-xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-secondary focus-visible:outline-offset-[3px]">Forgot Password?</button></div>
+            <button type="submit" class="mt-5 h-14 w-full rounded bg-brand text-2xl font-medium text-white hover:bg-[#914c32] focus-visible:outline focus-visible:outline-2 focus-visible:outline-secondary focus-visible:outline-offset-[3px]">Continue</button>
+            <p class="mt-1.5 text-center text-xl">Don’t have an account? <button type="button" data-login-action="register" class="font-medium text-[#b55e3d] hover:underline ml-1 underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-secondary focus-visible:outline-offset-[3px]">Register Now</button></p>
+        </form>
+        <div class="my-6 flex items-center gap-3 text-xl font-semibold text-[#70503d]"><span class="flex-1 border-t-2 border-dashed border-[#d1bba9]"></span>OR<span class="flex-1 border-t-2 border-dashed border-[#d1bba9]"></span></div>
+        <button type="button" data-login-action="google" class="flex min-h-[60px] w-full items-center justify-center gap-3 rounded border border-[#d1bba9] px-4 text-xl hover:bg-sand focus-visible:outline focus-visible:outline-2 focus-visible:outline-secondary focus-visible:outline-offset-[3px]">
+            <svg width="38" height="38" viewbox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M43.6 24.5c0-1.4-.1-2.8-.4-4.1H24v7.8h11a9.4 9.4 0 0 1-4.1 6.2v5.2h6.7c3.9-3.6 6-8.9 6-15.1Z"></path><path fill="#34A853" d="M24 44c5.5 0 10.1-1.8 13.5-4.9l-6.7-5.2c-1.8 1.2-4.1 2-6.8 2-5.3 0-9.8-3.6-11.4-8.4H5.7v5.4A20.4 20.4 0 0 0 24 44Z"></path><path fill="#FBBC05" d="M12.6 27.5a12.2 12.2 0 0 1 0-7V15H5.7a20 20 0 0 0 0 18l6.9-5.5Z"></path><path fill="#EA4335" d="M24 12.1c3 0 5.6 1 7.7 3l5.8-5.8A19.5 19.5 0 0 0 24 4 20.4 20.4 0 0 0 5.7 15l6.9 5.5C14.2 15.7 18.7 12.1 24 12.1Z"></path></svg>
+            Continue with google
+        </button>
+        <p id="login-status" role="status" class="mt-3 text-center text-sm text-[#70503d]" hidden></p>
+        <p class="mt-12 text-center text-xl leading-relaxed">By continuing you agree to Bantu Basket <button type="button" data-login-action="terms" class="font-medium text-[#b55e3d] hover:underline underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-secondary focus-visible:outline-offset-[3px]">Terms of Service</button> and <button type="button" data-login-action="privacy" class="font-medium text-[#b55e3d] hover:underline underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-secondary focus-visible:outline-offset-[3px]">Privacy &amp; Policy</button></p>
+    </dialog>
+
+    <script src="assets/js/login.js"></script>
+    <script src="assets/js/delivery-selector.js"></script>
+    <script src="assets/js/country-selector.js"></script>
+
+    <script src="assets/js/sell.js"></script>
+</body>
+
+</html>
